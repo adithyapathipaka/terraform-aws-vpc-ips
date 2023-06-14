@@ -1,4 +1,12 @@
+output "network_interfaces_ids" {
+  description = "Network Interfaces ID"
+  value = data.aws_network_interfaces.network_interfaces.ids
+
+}
+
+
 output "network_interfaces" {
-    value = data.aws_network_interfaces.network_interfaces.ids
-  
+  description = "Network Interfaces ID"
+  value = data.aws_network_interface.interface_info
+
 }
