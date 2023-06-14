@@ -14,7 +14,7 @@ module "vpc-ips" {
 ## Input Variables
 | Input Variable  | Variable Description | Optional | Data Type | Allow Values |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| `aws_vpc_id`  | AWS VPC ID  | `true` | string | |
+| `aws_vpc_id`  | AWS VPC ID  | `false` | string | |
 | `aws_security_group_id`  | AWS Security Group ID | `true` | list(string) | |
 | `aws_interface_endpoint_type`  | AWS VPC IP Interface Type  | `true` | list(string) | `"api_gateway_managed", "aws_codestar_connections_managed", "branch", "efa", "gateway_load_balancer", "gateway_load_balancer_endpoint", "global_accelerator_managed", "interface", "iot_rules_managed", "lambda", "load_balancer", "nat_gateway", "network_load_balancer", "quicksight", "transit_gateway", "trunk", "vpc_endpoint"`|
 
