@@ -8,9 +8,9 @@ variable "aws_vpc_id" {
   }
 }
 
-variable "security_group_id" {
+variable "aws_security_group_id" {
   description = "AWS Security Group ID"
-  type        = list(any)
+  type        = list(string)
   default     = []
   nullable    = false
 
@@ -18,7 +18,7 @@ variable "security_group_id" {
 
 variable "aws_interface_endpoint_type" {
   description = "AWS VPC IP Interface Type"
-  type        = list(any)
+  type        = list(string)
   default     = []
   nullable    = false
   validation {
