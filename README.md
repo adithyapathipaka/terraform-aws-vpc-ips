@@ -6,7 +6,6 @@ Terraform module to fetch the Ips from AWS VPC Network interfaces
 ```hcl
 module "vpc-ips" {
   source  = "adithyapathipaka/vpc-ips/aws"
-  version = "1.0.0"
   # insert the 1 required variable here
 }
 ```
