@@ -27,4 +27,4 @@ module "vpc-ips" {
 | `aws_ip_address_base_info` | Network Interfaces Base Info | list(map)
 
 > **Note**
-> All the Outputs will be empty if data is found with the given input
+> All the Outputs will be empty if no data is found with the given input
